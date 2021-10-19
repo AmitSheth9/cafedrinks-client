@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.cafedrink {
+  border: 5px solid brown;
+  width: 40%;
+  margin-bottom: 10px;
+  display: grid;
+  margin-left: 10px;
+  background-color: beige;
+}
+img {
+  height: 200px;
+  width: 200px;
+}

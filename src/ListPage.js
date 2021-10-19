@@ -18,6 +18,7 @@ export default class ListPage extends Component {
    
     render() {
         const { cafeDrinks } = this.state;
+        console.log(cafeDrinks);
 
         return (
             <div className='cafedrinks'>
@@ -27,16 +28,16 @@ export default class ListPage extends Component {
                     price,
                     calories,
                     category,
-                    image
+                    image,
                 }) =>
                 <Link to={`edit/${id}`} key={`${id}`}>
                     <div className='cafedrink'>
-                        <p>{id}</p>
-                        <p>{name}</p>
-                        <p>{price}</p>
-                        <p>{calories}</p>
-                        <p>{category}</p>
-                        <image src={image} alt={name}/>
+                        <p>ID: {id}</p>
+                        <p>Name: {name}</p>
+                        <p>Price: {price}</p>
+                        <p>Calories: {calories}</p>
+                        <p>Category: {category}</p>
+                        <img src={image} alt={name}/>
                     </div>
 
 
